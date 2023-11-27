@@ -33,7 +33,7 @@ mobile view [mobile view](./images/screenshot-mobile.png)
 ### Links
 
 - Solution URL: [github](https://github.com/hszilvi/testimonals-grid-section)
-- Live Site URL: [live url](https://your-live-site-url.com)
+- Live Site URL: [live url](https://hszilvi.github.io/testimonals-grid-section/)
 
 ## My process
 
@@ -61,6 +61,6 @@ I became more confident using grid and flex box.
 
 ## Author
 
-- Frontend Mentor - [@haszilvi](https://www.frontendmentor.io/profile/hszilvi)
+- Frontend Mentor - [@hszilvi](https://www.frontendmentor.io/profile/hszilvi)
 
 
