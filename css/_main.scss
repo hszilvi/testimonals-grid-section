@@ -1,0 +1,67 @@
+.testimonals-container {
+    margin: 2em auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "testimon-one"
+    "testimon-two"
+    "testimon-three"
+    'testimon-four'
+    'testimon-five';
+    row-gap: 2em;
+    // tablet+desktop view
+    @include breakpoint-up('large') {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'testimon-one testimon-one testimon-two testimon-five'
+        'testimon-three testimon-four testimon-four testimon-five'
+        ;
+        column-gap: 2em;
+    }
+    .testimon-one {
+        color: $light-p-color;
+        background-color: $purple;
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-size: 8em;
+        background-position: top 0 right 2em;
+        .avatar > img{
+            border: 2px solid #A775F1;
+        }
+        .testimon-head, .lead, p {
+            z-index: 100;
+        }
+        @include breakpoint-up('large') {
+            background-position: top 0 right 5.5em;
+        }    
+    }
+    .testimon-two {
+        background-color: $gray;
+        color: $light-p-color;
+    }
+    .testimon-three, .testimon-five {
+        background-color: $light-h-color;
+        color: $gray;
+        .name {
+            color: $gray;
+            span {
+                color: $gray;
+            }
+        }
+        .lead {
+            color: $gray
+        }
+        .details {
+            color: $gray;
+        }
+    }
+    .testimon-four {
+        background-color: $black;
+        color: $light-p-color;
+        .avatar > img {
+            border: 2px solid #A775F1;
+        }
+    }
+}
